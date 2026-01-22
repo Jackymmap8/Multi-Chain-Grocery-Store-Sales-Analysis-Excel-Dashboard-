@@ -1,0 +1,89 @@
+# 🛒 Multi-Chain Grocery Store Sales Analysis (Excel Dashboard)
+
+## 📌 Project Overview
+This project analyzes transactional data from a multi-chain grocery store to uncover insights on sales performance, customer behavior, discount effectiveness, and store-level trends.  
+The analysis was conducted using **Microsoft Excel**, with a fully interactive dashboard designed for business decision-making.
+
+The project demonstrates data cleaning, exploratory analysis, KPI tracking, and dashboard storytelling — suitable for both stakeholder presentations and portfolio review.
+
+---
+
+## 📊 Dataset Description
+The dataset contains transaction-level grocery store data with the following fields:
+
+- customer_id – Unique identifier for each customer  
+- store_name – Grocery store / branch  
+- transaction_date – Date of purchase  
+- aisle – Product category  
+- product_name – Item purchased  
+- quantity – Units purchased  
+- unit_price – Price per unit  
+- total_amount – Quantity × unit price  
+- discount_amount – Discount applied  
+- final_amount – Amount paid after discount  
+- loyalty_points – Loyalty points earned  
+
+---
+
+## ❓ Business Questions
+Key questions explored in this analysis include:
+
+- Which stores generate the highest revenue?
+- How do sales trends change over time?
+- Which aisles and products contribute most to revenue?
+- How effective are discounts in driving sales?
+- Do customers with higher loyalty points spend more?
+- How does store performance compare across locations?
+
+---
+
+## 🧹 Data Cleaning & Preparation
+The following steps were performed in Excel:
+
+- Converted raw data into structured Excel Tables
+- Standardized date and currency formats
+- Identified and handled negative or invalid final amounts
+- Validated total amounts using quantity × unit price
+- Removed duplicate records
+- Created time-based fields (Year, Month, Year-Month) for trend analysis
+
+---
+
+## 📈 Dashboard Features
+The Excel dashboard includes:
+
+### Key KPIs
+- Total Revenue  
+- Total Transactions  
+- Average Transaction Value  
+- Total Discounts Given  
+
+### Visualizations
+- Revenue by Store (Column Chart)
+- Monthly Revenue Trend (Line Chart)
+- Top Aisles by Revenue (Bar Chart)
+- Discount vs Final Revenue (Donut Chart)
+
+### Interactivity
+- Store slicer
+- Year slicer
+- Aisle slicer  
+
+These filters allow users to dynamically explore performance across stores, time periods, and product categories.
+
+---
+
+## 💡 Key Insights
+- Certain stores generate higher revenue but rely heavily on discounts
+- A small number of aisles contribute a disproportionate share of total sales
+- Loyalty customers tend to have higher average transaction values
+- Seasonal trends significantly impact grocery sales volume
+
+---
+
+## 🛠 Tools Used
+- Microsoft Excel (Power Query, Pivot Tables, Pivot Charts, Slicers)
+
+---
+
+## 📂 Repository Structure

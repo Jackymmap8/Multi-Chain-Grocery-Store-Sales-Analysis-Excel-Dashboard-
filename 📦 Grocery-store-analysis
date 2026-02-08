@@ -1,10 +1,11 @@
 # 🛒 Multi-Chain Grocery Store Sales Analysis (Excel Dashboard)
 
 ## 📌 Project Overview
-This project analyzes transactional data from a multi-chain grocery store to uncover insights on sales performance, customer behavior, discount effectiveness, and store-level trends.  
-The analysis was conducted using **Microsoft Excel**, with a fully interactive dashboard designed for business decision-making.
+This project involves a comprehensive analysis of 1,980+ transactions across multiple grocery store chains (MegaMart, GreenGrocer, ValuePlus, etc.). Using Excel, 
+I performed data cleaning, handled financial anomalies, and built an interactive dashboard to visualize sales trends and store efficiency.
 
-The project demonstrates data cleaning, exploratory analysis, KPI tracking, and dashboard storytelling — suitable for both stakeholder presentations and portfolio review.
+The project demonstrates end-to-end data analytics skills including data cleaning, exploratory analysis, KPI development, and dashboard storytelling —
+suitable for stakeholder presentations and portfolio review.
 
 ---
 
@@ -42,10 +43,21 @@ The following steps were performed in Excel:
 
 - Converted raw data into structured Excel Tables
 - Standardized date and currency formats
+      transaction_date → Date
+      quantity, unit_price, discount_amount → Number
+      store_name, aisle → Text
+
 - Identified and handled negative or invalid final amounts
+Created a helper column:
+      =IF(final_amount<0,"Review","OK")
+
 - Validated total amounts using quantity × unit price
 - Removed duplicate records
 - Created time-based fields (Year, Month, Year-Month) for trend analysis
+        Year	=YEAR(transaction_date)
+        Month	=TEXT(transaction_date,"mmm")
+        Discount %	=discount_amount / total_amount
+        Revenue Flag	=IF(final_amount>0,"Valid","Error")
 
 ---
 
